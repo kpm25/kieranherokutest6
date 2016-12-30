@@ -22,7 +22,7 @@ apply plugin: 'spring-boot'
 apply plugin: 'java'
 
 jar {
-	baseName = 'todotoday'
+	baseName = 'myGiflib-heroku'
 	version = '0.0.1-SNAPSHOT'
 }
 

@@ -22,10 +22,10 @@ public class DataConfig {
 
     @Bean
     public LocalSessionFactoryBean sessionFactory() {
-   //     Resource config = new ClassPathResource("hibernate.cfg.xml");
+        Resource config = new ClassPathResource("hibernate.cfg.xml");
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
-    //    sessionFactory.setConfigLocation(config);
-        sessionFactory.setHibernateProperties(getHibernateProperties() );
+        sessionFactory.setConfigLocation(config);
+     //   sessionFactory.setHibernateProperties(getHibernateProperties() );
         
         sessionFactory.setPackagesToScan(env.getProperty("giflib.entity.package"));
         sessionFactory.setDataSource(dataSource());

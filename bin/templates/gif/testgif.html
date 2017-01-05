@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" th:href="@{/assets/css/main.css}" />
+
+<style>
+#wss{
+	opacity:0;
+	-webkit-transition:opacity 1.0s linear 0s;
+	transition:opacity 1.0s linear 0s;
+}
+</style>
+
+<script>
+var wss_i = 0;
+var wss_array = [
+
+            
+                  ' <img th:src="@{|/gifs/${gif1.id}.gif|}" alt="gif" />',
+                   ' <img th:src="@{|/gifs/${gif2.id}.gif|}" alt="gif" />',
+                    ' <img th:src="@{|/gifs/${gif3.id}.gif|}" alt="gif" />',
+                    
+                    
+                    ' <img th:src="@{|/gifs/${gif33.id}.gif|}" alt="gif" />',
+                     ' <img th:src="@{|/gifs/${gif34.id}.gif|}" alt="gif" />',
+                      ' <img th:src="@{|/gifs/${gif65.id}.gif|}" alt="gif" />',
+                       ' <h1 th:text="${gif66.description}">default</h1>'
+                     
+                 ];
+                 
+                 // <!--    <script type="text/javascript" th:src="@{/assets/js/app.js}"></script>  -->
+var wss_elem;
+function wssNext(){
+	wss_i++;
+	wss_elem.style.opacity = 0;
+	if(wss_i > (wss_array.length - 1)){
+		wss_i = 0;
+	}
+	setTimeout('wssSlide()',1000);
+}
+function wssSlide(){
+	wss_elem.innerHTML = wss_array[wss_i];
+	wss_elem.style.opacity = 1;
+	setTimeout('wssNext()',2000);
+}
+</script>
+</head>
+<body>
+ 
+
+<h1>This is Korea:<br/> <span id="wss"></span></h1>
+<a th:href="@{/}">home</a>
+	<a th:href="@{/index}">link test3</a>
+	
+	
+<script>wss_elem = document.getElementById("wss"); wssSlide(); </script>
+</body>
+</html>

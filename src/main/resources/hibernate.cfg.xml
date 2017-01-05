@@ -14,10 +14,10 @@
         <property name="show_sql">true</property>
         
         <!-- Set naming strategy -->
-        <property name="hibernate.implicit_naming_strategy">org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl</property>
+ <!--       <property name="hibernate.implicit_naming_strategy">org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl</property>  -->
 
         <!-- Update the database schema (structure) on startup -->
-        <property name="hbm2ddl.auto">validate</property>
-    </session-factory>           <!-- update, create-drop -->
+        <property name="hbm2ddl.auto">create-drop</property>
+    </session-factory>           <!-- validate,update  -->
 
 </hibernate-configuration>

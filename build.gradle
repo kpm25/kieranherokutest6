@@ -47,7 +47,7 @@ dependencies {
     
       compile group: 'postgresql', name: 'postgresql', version: '9.0-801.jdbc4'
       
-      runtime 'org.xerial:sqlite-jdbc:3.8.11.2'
+     
      
 
     

@@ -11,30 +11,50 @@
 }
 </style>
 
-<script>
+<script >
+
+
 var wss_i = 0;
+
+
 var wss_array = [
 
             
-                  ' <img th:src="@{|/gifs/${gif1.id}.gif|}" alt="gif" /><br/>'+
-                   '<a th:href="@{|/gifs/${gif1.id}|}" th:text="${gif1.description}">link</a>',
-                   ' <img th:src="@{|/gifs/${gif2.id}.gif|}" alt="gif" /><br/>'+
-                    '<a th:href="@{|/gifs/${gif2.id}|}" th:text="${gif2.description}">link</a>',
-                    '<img th:src="@{|/gifs/${gif3.id}.gif|}" alt="gif" /><br/>'+
-                     '<a th:href="@{|/gifs/${gif3.id}|}" th:text="${gif3.description}">link</a>',
+                  '<img th:src="@{|/gifs/${gif0.id}.gif|}" alt="gif" /><br/>'+
+                   '<a th:href="@{|/gifs/${gif0.id}|}" th:text="${gif0.description}">link</a>',
+                   '<img th:src="@{|/gifs/${gif1.id}.gif|}" alt="gif" /><br/>'+
+                    '<a th:href="@{|/gifs/${gif1.id}|}" th:text="${gif1.description}">link</a>',
+                    '<img th:src="@{|/gifs/${gif2.id}.gif|}" alt="gif" /><br/>'+
+                     '<a th:href="@{|/gifs/${gif2.id}|}" th:text="${gif2.description}">link</a>',
                     
-                    
-                    ' <img th:src="@{|/gifs/${gif33.id}.gif|}" alt="gif" /><br/>'+
-                     '<a th:href="@{|/gifs/${gif33.id}|}" th:text="${gif33.description}">link</a>',
-                     ' <img th:src="@{|/gifs/${gif34.id}.gif|}" alt="gif" /><br/>'+
-                      '<a th:href="@{|/gifs/${gif34.id}|}" th:text="${gif34.description}">link</a>',
-                      ' <img th:src="@{|/gifs/${gif65.id}.gif|}" alt="gif" /><br/>'+
-                       '<a th:href="@{|/gifs/${gif65.id}|}" th:text="${gif65.description}">link</a>',
-                        ' <img th:src="@{|/gifs/${gif66.id}.gif|}" alt="gif" /><br/>'+
-                       '<a th:href="@{|/gifs/${gif66.id}|}" th:text="${gif66.description}">link</a>',
+                   
+                  '<img th:src="@{|/gifs/${gif3.id}.gif|}" alt="gif" /><br/>'+
+                   '<a th:href="@{|/gifs/${gif3.id}|}" th:text="${gif3.description}">link</a>',
+                   '<img th:src="@{|/gifs/${gif4.id}.gif|}" alt="gif" /><br/>'+
+                    '<a th:href="@{|/gifs/${gif4.id}|}" th:text="${gif4.description}">link</a>',
+                    '<img th:src="@{|/gifs/${gif5.id}.gif|}" alt="gif" /><br/>'+
+                     '<a th:href="@{|/gifs/${gif5.id}|}" th:text="${gif5.description}">link</a>',
+                     
+                      '<img th:src="@{|/gifs/${gif6.id}.gif|}" alt="gif" /><br/>'+
+                     '<a th:href="@{|/gifs/${gif6.id}|}" th:text="${gif6.description}">link</a>',
+                    '<img th:src="@{|/gifs/${gif7.id}.gif|}" alt="gif" /><br/>'+
+                     '<a th:href="@{|/gifs/${gif7.id}|}" th:text="${gif7.description}">link</a>',
+                     
+                       '<img th:src="@{|/gifs/${gif8.id}.gif|}" alt="gif" /><br/>'+
+                     '<a th:href="@{|/gifs/${gif8.id}|}" th:text="${gif8.description}">link</a>' ,
+                         '<img th:src="@{|/gifs/${gif9.id}.gif|}" alt="gif" /><br/>'+
+                     '<a th:href="@{|/gifs/${gif9.id}|}" th:text="${gif9.description}">link</a>'        
+                     
+                       
+                        
+                      
                        
                      
-                 ];
+                 ]; 
+  
+
+
+
                  
                  // <!--    <script type="text/javascript" th:src="@{/assets/js/app.js}"></script>  -->
 var wss_elem;
@@ -58,7 +78,7 @@ function wssSlide(){
 
 <h1>This is Korea:<br/> <span id="wss"></span></h1>
 <a th:href="@{/}">home</a>
-	<a th:href="@{/index}">link test3</a>
+	
 	
 	
 <script>wss_elem = document.getElementById("wss"); wssSlide(); </script>

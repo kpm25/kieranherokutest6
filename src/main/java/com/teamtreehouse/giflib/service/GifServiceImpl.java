@@ -11,7 +11,9 @@ import java.util.List;
 
 @Service
 public class GifServiceImpl implements GifService {
-    @Autowired
+    
+
+	@Autowired
     private GifDao gifDao;
 
     @Override
@@ -44,4 +46,15 @@ public class GifServiceImpl implements GifService {
         gif.setFavorite(!gif.isFavorite());
         gifDao.save(gif);
     }
+    
+    @Override
+	public Gif[] findAllArray() {
+    	
+    	Gif[] array = new Gif[gifDao.findAll().size()];
+    	 // fill the array
+    	
+		
+		// TODO Auto-generated method stub
+		return gifDao.findAll().toArray(array);
+	}
 }

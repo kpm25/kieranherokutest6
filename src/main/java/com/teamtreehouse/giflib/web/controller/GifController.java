@@ -161,26 +161,18 @@ public class GifController {
     @RequestMapping(path = "/testgif", method = RequestMethod.GET)
     public String testTask2(Model model) {
     	  // TODO: Get all gifs
- 
-    	 Gif gif1 = gifService.findById( (long) 1);
-    	 Gif gif2 = gifService.findById((long) 2);
-    	 Gif gif3 = gifService.findById((long) 3);
-    	 Gif gif33 = gifService.findById((long) 33);
-    	 Gif gif34 = gifService.findById((long) 34);
+         Gif[] gifArr = gifService.findAllArray();
+        
+    
      	
-    	 Gif gif65 = gifService.findById((long) 65);
-     	
-    	 Gif gif66 = gifService.findById((long) 66);
-     	
-    	
+    	 //put all gifs to model as seperate entities:
+    	for(int i=0; i<gifArr.length;i++){
+    		 model.addAttribute("gif"+i, gifArr[i]);
+    		 
+    	}
 
-        model.addAttribute("gif1", gif1);
-        model.addAttribute("gif2", gif2);
-        model.addAttribute("gif3", gif3);
-        model.addAttribute("gif33", gif33);
-        model.addAttribute("gif34", gif34);
-        model.addAttribute("gif65", gif65);
-        model.addAttribute("gif66", gif66);
+    	
+       
        
         
        

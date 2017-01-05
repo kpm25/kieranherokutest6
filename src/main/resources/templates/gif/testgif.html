@@ -16,15 +16,23 @@ var wss_i = 0;
 var wss_array = [
 
             
-                  ' <img th:src="@{|/gifs/${gif1.id}.gif|}" alt="gif" />',
-                   ' <img th:src="@{|/gifs/${gif2.id}.gif|}" alt="gif" />',
-                    ' <a th:href="@{|/gifs/${gif3.id}|}" th:text="${gif3.description}">link</a>',
+                  ' <img th:src="@{|/gifs/${gif1.id}.gif|}" alt="gif" /><br/>'+
+                   '<a th:href="@{|/gifs/${gif1.id}|}" th:text="${gif1.description}">link</a>',
+                   ' <img th:src="@{|/gifs/${gif2.id}.gif|}" alt="gif" /><br/>'+
+                    '<a th:href="@{|/gifs/${gif2.id}|}" th:text="${gif2.description}">link</a>',
+                    '<img th:src="@{|/gifs/${gif3.id}.gif|}" alt="gif" /><br/>'+
+                     '<a th:href="@{|/gifs/${gif3.id}|}" th:text="${gif3.description}">link</a>',
                     
                     
-                    ' <img th:src="@{|/gifs/${gif33.id}.gif|}" alt="gif" />',
-                     ' <img th:src="@{|/gifs/${gif34.id}.gif|}" alt="gif" />',
-                      ' <img th:src="@{|/gifs/${gif65.id}.gif|}" alt="gif" />',
-                       ' <h1 th:text="${gif66.description}">default</h1>'
+                    ' <img th:src="@{|/gifs/${gif33.id}.gif|}" alt="gif" /><br/>'+
+                     '<a th:href="@{|/gifs/${gif33.id}|}" th:text="${gif33.description}">link</a>',
+                     ' <img th:src="@{|/gifs/${gif34.id}.gif|}" alt="gif" /><br/>'+
+                      '<a th:href="@{|/gifs/${gif34.id}|}" th:text="${gif34.description}">link</a>',
+                      ' <img th:src="@{|/gifs/${gif65.id}.gif|}" alt="gif" /><br/>'+
+                       '<a th:href="@{|/gifs/${gif65.id}|}" th:text="${gif65.description}">link</a>',
+                        ' <img th:src="@{|/gifs/${gif66.id}.gif|}" alt="gif" /><br/>'+
+                       '<a th:href="@{|/gifs/${gif66.id}|}" th:text="${gif66.description}">link</a>',
+                       
                      
                  ];
                  

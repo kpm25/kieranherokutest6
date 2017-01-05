@@ -18,7 +18,7 @@ var wss_array = [
             
                   ' <img th:src="@{|/gifs/${gif1.id}.gif|}" alt="gif" />',
                    ' <img th:src="@{|/gifs/${gif2.id}.gif|}" alt="gif" />',
-                    ' <img th:src="@{|/gifs/${gif3.id}.gif|}" alt="gif" />',
+                    ' <a th:href="@{|/gifs/${gif3.id}|}" th:text="${gif3.description}">link</a>',
                     
                     
                     ' <img th:src="@{|/gifs/${gif33.id}.gif|}" alt="gif" />',
